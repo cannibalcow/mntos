@@ -109,7 +109,7 @@
 	$timestamp = explode(":", $timestamp[4]);
 	$timestamp = $timestamp[2];
 
-	$nowtime = date("s");
+	$nowtime = @date("s");
 	$refreshdif = 2; /* Sets the time to add until calculated next Nagiosdata fetch  */
 	$refreshfreq = 60; /* Set to how much time between Nagios data collecting (def: 60)  */
 	
