@@ -14,12 +14,12 @@
 
 	/* configure engine-paths etc. */
 
-	$path = $nagioscfg->getSysconf(dirname( $_SERVER['PHP_SELF'] ).'/config.ini', TRUE);
+	$path = $nagioscfg->getConfig(dirname( $_SERVER['PHP_SELF'] ).'/config.ini', TRUE);
 	
 	/* Get config-arrays */
 
-	$contacts = $nagioscfg->getContacts( $path['config']['contacts'] ."contacts.ini", TRUE);
-	$networks = $nagioscfg->getNetworks( $path['config']['networks'] ."networks.ini", TRUE);
+	$contacts = $nagioscfg->getConfig( $path['config']['contacts'] ."contacts.ini", TRUE);
+	$networks = $nagioscfg->getConfig( $path['config']['networks'] ."networks.ini", TRUE);
 	
 	/* grab Site and parse out status */
 	

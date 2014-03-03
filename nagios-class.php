@@ -6,7 +6,7 @@
 
 class config {
 
-	public function getContacts($filename, $part) {
+	public function getConfig($filename, $part) {
 		
 		if(is_file($filename) !== TRUE)
 			die("No such file: ". $filename ."\n");
@@ -16,27 +16,6 @@ class config {
 		return $contacts;
 
 	}
-
-	public function getNetworks($filename, $part) {
-		
-		if(is_file($filename) !== TRUE) 
-			die("No such file: ". $filename ."\n");
-
-		$config = parse_ini_file($filename, $part) or die("Error when parsing file". $filename ."\n");
-
-		return $config;
-	}
-
-	public function getSysconf($filename, $part) {
-	
-		if(is_file($filename) !== TRUE) 
-			die("No such file: ". $filename ."\n");
-	
-		$config = parse_ini_file($filename, $part) or die("Error when parsing file". $filename ."\n");
-	
-		return $config;
-	}
-
 }
 
 /*
