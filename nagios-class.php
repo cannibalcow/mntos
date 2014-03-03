@@ -140,7 +140,7 @@ class nagiosxml {
 		$xmlstamp = $xml->createElement('stamp');
 		$xmlstamp = $xmltimestamp->appendChild($xmlstamp);
 
-		$xmldate = $xml->createTextNode(date("r"));	
+		$xmldate = $xml->createTextNode(@date("r"));	
 		$xmldate = $xmlstamp->appendChild($xmldate);
 
 	foreach($contacts as $key => $value) {
