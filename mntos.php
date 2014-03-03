@@ -43,6 +43,6 @@
 	
 	$time = $timer->GetTime();
 	
-	print "\nTime to gather data and generate xml: ". $time ." sec ... ". date('l dS \of F Y h:i:s A')."\n";
+	print "\nTime to gather data and generate xml: ". $time ." sec ... ". @date('l dS \of F Y h:i:s A')."\n";
 
 ?>
