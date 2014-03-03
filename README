@@ -1,0 +1,54 @@
+Description
+=========================================================================
+MNTOS is a BSD licensed program written by Daniel Heldt.
+It's main purpouse is to gather data from multiple Tactical overview 
+pages on Nagios sites and compile it into a single XML file. 
+The XML file can be used by any frontend supporting XML.
+
+Installation
+=========================================================================
+1) unpack mntos-1.0.tar.gz
+   Wherever you want to. 
+   tar mntos-1.0.tar.gz
+
+2) edit config.ini
+   Add path definitions.
+
+3) edit contacts.ini
+   Add contacts as shown in example file.
+
+4) edit networks.ini
+   Add your nagios sites. See example in netowks.ini file.
+
+5) add cronjob. 
+   If mntos.php is in /var/www/mntos/ and php5 is in /usr/bin/php
+   this is how the cronjob should look. This would make mntos run every minute. 
+
+Example:
+	* * * * * /usr/bin/php /var/www/mntos/mntos.php /dev/null 2>&1
+
+6) Edit www/index.php line 114
+   Change the value equivalent with the cron time. 
+   If you have every two minutes checks it should be:
+   $refreshfreq = 120; 
+
+Tips
+=========================================================================
+* Set permissions to the network.ini so that it's not world readable.
+* Create a user on nagios system with minimum privileges thath MNTOS uses.
+
+Known bugs 
+=========================================================================
+No bugs. If you find one. Tell heldt by mail.
+
+Feature requests and bug reports
+=========================================================================
+danielheldtsmail@gmail.com
+
+Credits
+=========================================================================
+Daniel Heldt	Core programmer and creater of mntos.
+A.Bolstad	Frontend programmer
+J.Sundin	Good idea guy and hax0r.
+J.Hazell	Sound engineering.
+Jusin Dow	Bug reports/fix

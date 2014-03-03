@@ -1,0 +1,263 @@
+/* STATIC POSITIONS */
+
+table#container {
+	vertical-align: center;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#mute {
+	float: right;
+	width: 35px;
+	height: 35px;
+}
+div#muted {
+	background-image: url(img/default/Speaker_35_cross.png);
+}
+div#unmuted {
+	background-image: url(img/default/Speaker_35.png);
+}
+
+div#removemute {
+	position: absolute;
+	display: inline;
+
+	bottom: 50%;
+
+	background-color: #cccccc;
+	
+	width: 140px !important; /*moz width*/
+	width: 200px; /*IE width*/
+
+	padding: 25px;
+
+	border: 4px solid;
+	border-style: outset;
+
+	font-family: Arial, Verdana;
+	font-size: 16px;
+	font-weight: bold; 
+}
+
+img.muteimg {
+	width: 35px;
+	height: 35px;
+	border: 0px;
+}
+
+div#logo {
+	background-image: url(img/default/mntoslogo03.png);
+	background-repeat: no-repeat;
+	background-color: transparent;
+	height: 38px;
+	width: 250px;
+
+	float: left;
+}
+div#toptext {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+div#lastcheck  {
+	font-size: 14px;
+}
+
+div#crtext {
+	font-size: 10px;
+	font-family: Arial, Verdana;
+}
+
+
+/* TABLES */
+
+table.bgbord {
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 0px; 
+
+	margin: auto;
+}
+
+table.bord {
+        font-size: 	  13px;
+	font-family: 	  Verdana;
+	width: 		  100%;
+	
+	border: 	  1px solid #a6a6a6;
+
+	background-color: #FFFFFF;
+
+	margin-bottom: 	  5px;
+}
+
+th.title { /* cell for Titles */
+	height: 25px;
+	background-color: #CCCCCC;
+	background-image: url(img/default/gradient.jpg);
+
+	padding-left: 10px;
+	padding-right: 10px;
+
+	text-align: left;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+th.titleconimages {
+	text-align: right ! important;
+}
+
+img.conimage {
+	border:		0px;
+}
+
+td.errorcell { /* Cell to display errortext if MNTOS can't retrieve information from a Nagios setup */
+	padding: 5px;
+}
+div.errorcell {
+	background-color: #FFBBBB;
+
+	padding: 5px;
+
+	font-family: Courier New;
+
+	width: 500px;
+	border: 1px solid #000000;
+}
+
+td.locimage { /* Cell where the image of the Location is */
+	padding: 2px;
+	width: 50px;
+}
+
+img.locimage { /* image of the Location */
+	border: 0px;
+	width: 50px;
+	height: 50px;
+}
+
+
+
+td.bordcontact {
+	vertical-align: top;
+}
+
+table.bordcontact {
+        font-size: 	  13px;
+        font-family: 	  Verdana;
+        border: 	  1px solid #a6a6a6;
+        margin-bottom: 	  5px;
+        background-color: #FFFFFF;
+}
+
+td.contitle {
+	border-top: 1px solid #a6a6a6;
+	border-bottom: 1px solid #a6a6a6;
+	background-color: #cecece;
+	font-weight: bold;
+
+	padding:	2px;
+}
+
+td.coninfo {
+	padding:	2px;
+}
+
+
+/* DIFFERENT TYPES OF INFO CELLS */
+
+td.stateup {
+	background-color:	#cceecc !important;
+}
+td.statedown {
+}
+td.statedowndif {
+	background-color:	#FF0000 !important;
+	
+	font-weight:		bold;
+	text-decoration:	blink;
+}
+td.stateack {
+}
+td.stateunreach {
+}
+td.statependinghost {
+}
+td.statewarning {
+}
+td.statewarningdif { 
+	background-color:	#FEFFC1 ! important;
+}
+td.statecrit {
+}
+td.statecritdif {
+	background-color:	#FFBBBB; ! important;
+
+	text-decoration:	blink;
+}
+td.stateunknown {
+}
+td.stateunknowndif {
+	background-color:	#FFDA9F ! important;
+}
+td.stateok	{
+}
+td.statependingservice {
+}
+
+td.cell {
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	10px;
+	padding-right:	10px;
+	border-left:	solid 1px #a6a6a6;;
+	border-top:	solid 1px #a6a6a6;;
+}
+
+td.cell:hover {
+	background-color: #FFFFE8;
+}
+
+td.normalpos { /* All Cells expect edges (left and right) */
+}
+td.leftpos { /* Cells to the Left of the lists */
+}
+td.rightpos { /* Cells to the Right of the lists */
+}
+td.uplist { /* All cells on the topside of the list */
+}
+td.downlist { /* All cells on the downside of the list */
+}
+
+/* BODY LINKS ETC */
+
+body {
+	background-image: url(img/default/grgrad.gif);
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+
+	margin: 3% 0px 0px 0px; 
+	padding: 0px;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #aaaaaa;
+}
+a:visited {
+}
+a:hover {
+	color: #00cc00;
+}
+a:active {
+}
