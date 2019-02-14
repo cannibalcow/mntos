@@ -6,7 +6,7 @@ pages on Nagios sites and compile it into a single XML file.
 The XML file can be used by any frontend supporting XML.
 
 Requirements
-============
+=========================================================================
 PHP4 or higher and the php-xml module. 
 
 Installation
