@@ -5,6 +5,10 @@ It's main purpouse is to gather data from multiple Tactical overview
 pages on Nagios sites and compile it into a single XML file. 
 The XML file can be used by any frontend supporting XML.
 
+Requirements
+============
+PHP4 or higher and the php-xml module. 
+
 Installation
 =========================================================================
 1) unpack mntos-1.0.tar.gz
